@@ -8,7 +8,7 @@ export default function Header(){
             atl='Header logo'
             className='header--image'
             />
-            <h2 className='header--title'>Lottery name</h2>
+            <h2 className='header--title'>Mayan Lottery</h2>
             <h4 className='header--project'>React-app</h4>
         </header>
     )
