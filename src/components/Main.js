@@ -38,7 +38,7 @@ export default function Main(){
             </div>
             <div className='image-container'>
                 {selectedCard && (<img 
-                    src={`../images/${selectedCard.card}`}
+                    src={`${process.env.PUBLIC_URL}/images/${selectedCard.card}`}
                     alt={selectedCard.title}
                     className='lottery-image'
                 />)
