@@ -33,19 +33,19 @@ export default function Main(){
         <main>
         <div className='lottery-container'>
             <button className='button' onClick={getImage}>
-                    Get a card
+                Get a card
             </button>
             {selectedCard && (
                   <img src={`../images/${selectedCard.card}`} alt={selectedCard.title} className='lottery--image' />
             )}
              {allCardsShown && (
                   <p>No more cards, Play again?</p>
-             )}
+            )}
              {allCardsShown && (
                   <button className='button' onClick={restartGame}>
                        Restart
                   </button>
-             )}
+            )}
          </div>
     </main>
 
