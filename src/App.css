@@ -29,38 +29,37 @@ main {
   font-size: 0.9rem;
   font-weight: 500;
 }
-.button-container{
+.lottery-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
   margin-top: 20px;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
 }
-button{
-  width: 250px;
-  height: 40px;
-  grid-column: 1/ -1;
+.button {
   font-family: 'Karla', sans-serif;
+  font-size: 1.1rem;
   border-radius: 5px;
   background: linear-gradient(90.41deg, #711F8D 1.4%, #A818DA 100%);
   color: white;
   border: none;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 15px 30px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 75%; 
 }
-button:hover {
-  background: palevioletred;
+
+.button:focus,
+.button:active {
+  background: linear-gradient(90.41deg, #711F8D 1.4%, #A818DA 100%);
+  border-color: transparent; 
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-button:active {
-  background: #A818DA;
-}
-button:focus {
-  outline: none; 
-  box-shadow: 0 0 5px rgba(167, 24, 218, 0.5); 
-}
-.image-container{
-  max-width: 30%;
-  margin: 0 auto;
-  text-align: center; 
-}
+
 .lottery-image{
   max-width: 100%;
   border-radius: 3px;   

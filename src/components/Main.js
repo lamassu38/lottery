@@ -31,26 +31,23 @@ export default function Main(){
 
     return (
         <main>
-            <div className='button-container'>
-                <button className='lottery--button' onClick={getImage}>
+        <div className='lottery-container'>
+            <button className='button' onClick={getImage}>
                     Get a card
-                </button>
-            </div>
-            <div className='image-container'>
-                {selectedCard && (<img 
-                    src={`${process.env.PUBLIC_URL}/images/${selectedCard.card}`}
-                    alt={selectedCard.title}
-                    className='lottery-image'
-                />)
-                }
-                {allCardsShown && (
-                    <div>
-                    <p>No more Cards</p>
-                    <button className='lottery--button' onClick={restartGame}>Play again</button>
-                    </div>
-                )
-                }
-            </div>
-        </main>
-    )
+            </button>
+            {selectedCard && (
+                  <img src={`../images/${selectedCard.card}`} alt={selectedCard.title} className='lottery--image' />
+            )}
+             {allCardsShown && (
+                  <p>No more cards, Play again?</p>
+             )}
+             {allCardsShown && (
+                  <button className='button' onClick={restartGame}>
+                       Restart
+                  </button>
+             )}
+         </div>
+    </main>
+
+    );
 }
