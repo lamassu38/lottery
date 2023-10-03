@@ -36,7 +36,7 @@ export default function Main(){
                 Get a card
             </button>
             {selectedCard && (
-                  <img src={`lottery/images/${selectedCard.card}`} alt={selectedCard.title} className='lottery--image' />
+                  <img src={`images/${selectedCard.card}`} alt={selectedCard.title} className='lottery--image' />
             )}
              {allCardsShown && (
                   <p>No more cards, Play again?</p>
