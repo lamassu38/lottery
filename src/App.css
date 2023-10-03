@@ -16,11 +16,7 @@ main {
   color: white;
   padding: 20px;
 }
-.header--image{
-  max-width: 100%;
-  height: auto;
-  margin-right: 6px;
-}
+
 .header--title{
   font-size: 1.25rem;
   margin-right: auto;   
@@ -35,7 +31,7 @@ main {
   align-items: center; 
   margin-top: 20px;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 70%;
   text-align: center;
 }
 .button {
@@ -47,9 +43,9 @@ main {
   border: none;
   cursor: pointer;
   padding: 15px 30px;
-  transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 75%; 
+  width: 40%; 
 }
 
 .button:focus,
@@ -60,7 +56,8 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.lottery-image{
-  max-width: 100%;
+.lottery--image{
+  max-width: 40%;
+  height: auto;
   border-radius: 3px;   
 }
